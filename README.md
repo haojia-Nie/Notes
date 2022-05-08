@@ -1,6 +1,5 @@
 
-# A3 Notes
-Haojia Nie (h7nie 20770220)
+# Notes App
 
 ## Setup
 * macOS 11.2.3 Big Sur 
