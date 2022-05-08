@@ -1,5 +1,5 @@
 
-# Notes App
+# Notes App for Android
 
 ## Setup
 * macOS 11.2.3 Big Sur 
