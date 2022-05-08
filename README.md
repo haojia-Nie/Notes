@@ -11,8 +11,9 @@ Haojia Nie (h7nie 20770220)
 * Target JVM Version 1.8
 * Minimum SDK API:30 Android 11.0 (R)
 * Virtual Configuration Device: Pixel API 30 5.0 1080px x 1920px
-* To run, please add a local properties file inside the directory that specify the directory of android SDK
+* To run, please add a local properties file that specify the directory of android SDK
 ```
+## e.g.
 sdk.dir=/Users/yourusername/Library/Android/sdk
 ```
 
