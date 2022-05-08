@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:id="@+id/note" android:padding="10dp">
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteTitle"
+            app:layout_constraintStart_toEndOf="@+id/delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="15dp" android:textStyle="bold" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="5dp" android:maxLines="1"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteContent"
+            app:layout_constraintTop_toBottomOf="@+id/noteTitle"
+            app:layout_constraintEnd_toEndOf="@+id/noteTitle"
+            app:layout_constraintStart_toStartOf="@+id/noteTitle" android:layout_marginTop="2dp" android:maxLines="2"
+    />
+    <Button
+            android:text="D"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:id="@+id/delete"
+            android:padding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp" android:layout_marginStart="5dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

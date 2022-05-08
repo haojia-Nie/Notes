@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FragmentEdit"
+>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTitle"
+            android:hint="Title"
+            app:layout_constraintTop_toBottomOf="@+id/importantSwitch"
+            app:layout_constraintStart_toStartOf="@+id/importantSwitch"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:maxLines="1" tools:ignore="TouchTargetSizeCheck"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editStatus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:text="Status" android:textSize="16sp"/>
+    <Switch
+            android:text="Important"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/importantSwitch"
+            app:layout_constraintTop_toBottomOf="@+id/editStatus"
+            app:layout_constraintStart_toStartOf="@+id/editStatus" android:layout_marginTop="10dp"
+            android:minHeight="48dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/editBody"
+            app:layout_constraintTop_toBottomOf="@+id/editTitle"
+            app:layout_constraintEnd_toEndOf="@+id/editTitle"
+            app:layout_constraintStart_toStartOf="@+id/editTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:hint="Body" android:gravity="top" app:layout_constraintBottom_toTopOf="@+id/saveButton"
+            android:layout_marginBottom="5dp"/>
+    <Button
+            android:text="SAVE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" android:gravity="center" android:foregroundGravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
